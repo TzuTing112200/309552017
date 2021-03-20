@@ -12,11 +12,11 @@ import java.util.stream.Stream;
 public class PriorityQueueTest{
     public static Stream<Arguments> getParameters(){
         return Stream.of(
-                arguments(new int[]{1, 3, 4, 2}, new int[]{100, 2, 3, 4}),
-                arguments(new int[]{7, 2, 3, 4}, new int[]{100, 3, 4, 7}),
-                arguments(new int[]{6, 1, 11, 3}, new int[]{100, 3, 6, 11}),
-                arguments(new int[]{3, 7, 3, 9}, new int[]{100, 3, 7, 9}),
-                arguments(new int[]{0, 2, 4, 8}, new int[]{100, 2, 4, 8})
+                arguments(new int[]{1, 3, 4, 2}, new int[]{1, 2, 3, 4}),
+                arguments(new int[]{7, 2, 3, 4}, new int[]{2, 3, 4, 7}),
+                arguments(new int[]{6, 1, 11, 3}, new int[]{1, 3, 6, 11}),
+                arguments(new int[]{3, 7, 3, 9}, new int[]{3, 3, 7, 9}),
+                arguments(new int[]{0, 2, 4, 8}, new int[]{0, 2, 4, 8})
         );
     }
 
